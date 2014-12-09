@@ -7,5 +7,7 @@ Packages are essentially bash scripts that download, create folder structures, c
 
 #### Example: Build and install chromedriver
 `cd chromedriver`
+
 `./build.sh` generates the deb package
+
 `sudo dpkg -i chromedriver_X.xx_amd64.deb` installs the package in the current system
