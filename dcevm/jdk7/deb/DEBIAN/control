@@ -1,0 +1,16 @@
+Package: dcevm-7-jdk
+Source: dcevm-7
+Version: 7u60b09-1.0
+Architecture: amd64
+Maintainer: Gonzalo Matheu <gonzalommj@gmail.com>
+Installed-Size: 20146
+Depends: libc6 (>= 2.2.5)
+Recommends: libxt-dev
+Suggests: 
+Provides: java-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-jdk
+Section: java
+Priority: optional
+Multi-Arch: same
+Homepage: https://dcevm.github.io/
+Description: DCEVM (Dynamic Code Evolution VM) Development Kit (JDK)
+ Patched OpenJDK that enhances class redefinition mechanism

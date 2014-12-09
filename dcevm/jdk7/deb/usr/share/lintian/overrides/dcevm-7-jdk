@@ -1,0 +1,2 @@
+# OpenJDK uses $ORIGIN to find shared libs in JAVA_HOME
+dcevm-7-jdk binary: binary-or-shlib-defines-rpath

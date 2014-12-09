@@ -1,0 +1,11 @@
+# empty directory by intent
+dcevm-7-jre binary: package-contains-empty-directory usr/share/binfmts/
+
+# Strip libjvm.so with --strip-debug instead of --strip-unneeded. LP: #574997.
+dcevm-7-jre binary: unstripped-binary-or-object
+
+# OpenJDK uses $ORIGIN to find shared libs in JAVA_HOME
+dcevm-7-jre binary: binary-or-shlib-defines-rpath
+
+# Ignore the mouse cursors
+dcevm-7-jre binary: image-file-in-usr-lib
