@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=IntelliJ Idea 14 Community
+Exec=/usr/local/bin/idea-IC-14
+Icon=/opt/idea-IC-14/bin/idea.png
+Comment=IntelliJ Idea 14
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=false
+GenericName=Idea 14
