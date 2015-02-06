@@ -1,5 +1,5 @@
-#! /bin/bash -ex
-set -ex
+#! /bin/bash -e
+set -e
 
 function you_need {
   which $1 || { 
@@ -16,10 +16,11 @@ build() {
   BITS=64
   ARCH=amd$BITS
   TMP=./tmp-$VERSION
-  DEST=$TMP/opt/chromedriver
-  DEB=chromedriver-$VERSION\_$ARCHITECTURE.deb
-  FILE=chromedriver_linux$BITS.zip
-  LINK=$TMP/usr/local/bin/chromedriver
+  PACKAGE=chromedriver
+  DEST=$TMP/opt/$PACKAGE
+  DEB=${PACKAGE}_${VERSION}_${ARCH}.deb
+  FILE=$PACKAGE_linux$BITS.zip
+  LINK=$TMP/usr/local/bin/$PACKAGE
 
   echo "Downloading chromedriver $VERSION for $ARCH"
   wget -nc http://chromedriver.storage.googleapis.com/$VERSION/$FILE -O $VERSION.zip || echo "Already downloaded"
@@ -35,14 +36,15 @@ build() {
     --deb-build-depends "google-chrome-stable (>= 33) | google-chrome-beta (>= 33) | google-chrome-unstable (>= 33)" \
     --provides chromedriver \
     usr opt
+
+
+  . ../.secrets
+  . ../upload-bintray.sh
+  upload
 }
 
 build "2.10"
 build "2.11"
 build "2.12"
-
-# read -p "Bintray Api Key: " BINTRAY_API_KEY
-# BINTRAY_USER=gmatheu
-# curl -vT $DEB -u$BINTRAY_USER:$BINTRAY_API_KEY  https://api.bintray.com/content/gmatheu/deb/chromedriver/$VERSION/$DEB
-# rm -rf ./tmp
-# echo 
+build "2.13"
+build "2.14"
