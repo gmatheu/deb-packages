@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER=Gonzalo Matheu <gonzalommj@gmail.com>
+MAINTAINER Gonzalo Matheu <gonzalommj@gmail.com>
 
 RUN apt-get update && apt-get install -y git build-essential libssl-dev
 RUN mkdir /workspace
