@@ -19,7 +19,7 @@ build() {
   PACKAGE=chromedriver
   DEST=$TMP/opt/$PACKAGE
   DEB=${PACKAGE}_${VERSION}_${ARCH}.deb
-  FILE=$PACKAGE_linux$BITS.zip
+  FILE=${PACKAGE}_linux$BITS.zip
   LINK=$TMP/usr/local/bin/$PACKAGE
 
   echo "Downloading chromedriver $VERSION for $ARCH"
