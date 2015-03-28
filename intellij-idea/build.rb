@@ -6,7 +6,7 @@ require 'pre-packager'
 include PrePackager
 
 options={major: '14',
-         minor: '0.3'}
+         minor: '1'}
 OptionParser.new do |opts|
   opts.banner = "Usage: #{$0} [--major 14] [--minor 0.3]"
   opts.on('--major major', 'Major Version') do |major|
@@ -32,6 +32,7 @@ download_from 'http://download-cf.jetbrains.com/idea/$name.$minor_version.tar.gz
                   end
                 end.
                 with_templates('template/usr/local/share/applications/*', '/usr/local/share/applications').
+                with_templates('template/idea.properties', '/opt/$name/bin').
                 create_package(dry_run: false,
                                version: '$version.$minor_version',
                                description: 'IntelliJ Idea $version Community Edition',
