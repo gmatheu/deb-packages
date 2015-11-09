@@ -26,6 +26,3 @@ PLATFORMS
 DEPENDENCIES
   fpm
   pre-packager (~> 0.0.2)
-
-BUNDLED WITH
-   1.10.4

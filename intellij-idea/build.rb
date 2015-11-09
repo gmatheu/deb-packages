@@ -5,8 +5,8 @@ require 'pre-packager'
 
 include PrePackager
 
-options={major: '14',
-         minor: '1.3'}
+options={major: '15',
+         minor: '0'}
 OptionParser.new do |opts|
   opts.banner = "Usage: #{$0} [--major 14] [--minor 0.3]"
   opts.on('--major major', 'Major Version') do |major|
