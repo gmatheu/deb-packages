@@ -3,10 +3,10 @@
 Version=1.0
 Encoding=UTF-8
 Type=Application
-Name=Eclipse Luna
-Exec=/usr/local/bin/eclipse-luna
-Icon=/opt/eclipse-luna/icon.xpm
-Comment=Eclipse Luna
+Name=Eclipse Mars
+Exec=/usr/local/bin/eclipse-mars
+Icon=/opt/eclipse-mars/icon.xpm
+Comment=Eclipse Mars
 Categories=Development;IDE;
 Terminal=false
 StartupNotify=false
