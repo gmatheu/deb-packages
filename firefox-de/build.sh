@@ -1,12 +1,15 @@
 #! /bin/bash -ex
 set -ex
 
+#template: source: https://bitbucket.org/api/2.0/snippets/gmatheu/rK4j4/0686b5b4500918076b41ddc199413a15aaf42c1d/files/you_need.sh
 function you_need {
   which $1 || { 
     echo "You need $1"
     exit 1 
   }
 }
+
+#template:end
 you_need "wget"
 you_need "curl"
 you_need "tar"
