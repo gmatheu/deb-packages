@@ -41,8 +41,9 @@ build() {
     usr opt
 }
 
-build "35.0a2"  
-build "36.0a2"  
+#build "35.0a2"
+#build "36.0a2"
+build "45.0a2"
 
 # read -p "Bintray Api Key: " BINTRAY_API_KEY
 # BINTRAY_USER=gmatheu

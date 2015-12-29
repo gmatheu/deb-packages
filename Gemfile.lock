@@ -19,6 +19,9 @@ GEM
       json (>= 1.7.7)
     json (1.8.2)
     pre-packager (0.0.2)
+    static-shell-templates (0.0.2)
+      thor
+    thor (0.19.1)
 
 PLATFORMS
   ruby
@@ -26,3 +29,7 @@ PLATFORMS
 DEPENDENCIES
   fpm
   pre-packager (~> 0.0.2)
+  static-shell-templates
+
+BUNDLED WITH
+   1.10.4
