@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=Electron Mattermost
+Exec=/usr/local/bin/electron-mattermost
+Icon=/opt/electron-mattermost/resources/app/resources/appicon.png
+Comment=Electron-based desktop application for Mattermost
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=false
