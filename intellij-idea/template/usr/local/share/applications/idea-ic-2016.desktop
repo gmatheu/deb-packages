@@ -1,0 +1,13 @@
+[Desktop Entry]
+
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=IntelliJ Idea 2016 Community
+Exec=/usr/local/bin/ideaIC-2016
+Icon=/opt/ideaIC-2016/bin/idea.png
+Comment=IntelliJ Idea 2016
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=false
+GenericName=Idea 2016 

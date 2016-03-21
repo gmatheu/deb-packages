@@ -5,8 +5,8 @@ require 'pre-packager'
 
 include PrePackager
 
-options={major: '15',
-         minor: '0.4'}
+options={major: '2016',
+         minor: '1'}
 OptionParser.new do |opts|
   opts.banner = "Usage: #{$0} [--major 14] [--minor 0.3]"
   opts.on('--major major', 'Major Version') do |major|
@@ -26,7 +26,7 @@ end.parse!
 Application.new(name: 'ideaIC-$version',
                 version: options[:major],
                 minor_version: options[:minor]).
-download_from 'http://download-cf.jetbrains.com/idea/$name.$minor_version.tar.gz' do |p|
+download_from 'http://download.jetbrains.com/idea/$name.$minor_version.tar.gz' do |p|
                   p.extract('/opt', strip: 1, use_name: true) do |content|
                     content.link 'bin/idea.sh', use_name: true
                   end
