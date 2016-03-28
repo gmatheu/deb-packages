@@ -5,7 +5,7 @@ require 'pre-packager'
 
 include PrePackager
 
-options={version: '1.0.1'}
+options={version: '1.0.7'}
 OptionParser.new do |opts|
   opts.banner = "Usage: #{$0} [--version 1.0.0 ]"
 
