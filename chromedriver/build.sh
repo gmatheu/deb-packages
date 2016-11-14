@@ -43,8 +43,9 @@ build() {
   upload
 }
 
-build "2.10"
-build "2.11"
-build "2.12"
-build "2.13"
-build "2.14"
+# build "2.10"
+# build "2.11"
+# build "2.12"
+# build "2.13"
+# build "2.14"
+build "2.25"
