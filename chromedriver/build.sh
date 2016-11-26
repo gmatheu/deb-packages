@@ -30,6 +30,7 @@ build() {
   chmod a+x $DEST/chromedriver
   ln -sf /opt/chromedriver/chromedriver $LINK 
 
+  rm -f $DEB
   fpm -s dir -t deb -C $TMP -n chromedriver -v $VERSION -a amd64 \
     --description "ChromeDriver is a standalone server which implements WebDriver's wire protocol" \
     --maintainer "Gonzalo Matheu <gonzalommj@gmail.com>" \
@@ -37,10 +38,9 @@ build() {
     --provides chromedriver \
     usr opt
 
-
-  . ../.secrets
-  . ../upload-bintray.sh
-  upload
+  . ../bintray.sh
+  bintray-create-version
+  bintray-upload
 }
 
 # build "2.10"
