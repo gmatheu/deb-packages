@@ -1,0 +1,18 @@
+box: ruby:2.3
+build:
+    steps:
+        - install-packages:
+                packages: curl wget unzip
+        - bundle-install
+        - script:
+            name: chromedriver
+            cwd: chromedriver
+            code: ./build.sh
+        - script:
+            name: geckodriver
+            cwd: geckodriver
+            code: ./build.sh
+        - script:
+            name: phantomjs
+            cwd: phantomjs
+            code: ./build.sh
