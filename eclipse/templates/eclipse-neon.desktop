@@ -3,10 +3,10 @@
 Version=1.0
 Encoding=UTF-8
 Type=Application
-Name=Eclipse Mars
-Exec=/usr/local/bin/eclipse-mars
-Icon=/opt/eclipse-mars/icon.xpm
-Comment=Eclipse Mars
+Name=Eclipse Neon
+Exec=/usr/local/bin/eclipse-neon
+Icon=/opt/eclipse-neon/icon.xpm
+Comment=Eclipse Neon
 Categories=Development;IDE;
 Terminal=false
 StartupNotify=false

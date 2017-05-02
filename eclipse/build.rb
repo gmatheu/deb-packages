@@ -3,12 +3,12 @@
 require 'pre-packager'
 
 include PrePackager
-file = 'release/mars/1/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz'
+file = 'release/neon/3/eclipse-jee-neon-3-linux-gtk-x86_64.tar.gz'
 url = "http://eclipse.c3sl.ufpr.br/technology/epp/downloads/#{file}"
 Application.new(name: '$basename-$version',
   basename: 'eclipse',
-  version: 'mars',
-  minor_version: '4.5.1').
+  version: 'neon',
+  minor_version: '4.6.3').
   download_from url do |p|
     p.extract('/opt/$name', strip: 1) do |content|
       content.link '$name/eclipse', use_name: true
