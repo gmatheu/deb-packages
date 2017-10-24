@@ -17,7 +17,7 @@ GEM
       clamp (~> 0.6)
       ffi
       json (>= 1.7.7)
-    json (1.8.2)
+    json (2.1.0)
     pre-packager (0.0.2)
     static-shell-templates (0.0.2)
       thor
@@ -28,8 +28,9 @@ PLATFORMS
 
 DEPENDENCIES
   fpm
+  json (~> 2)
   pre-packager (~> 0.0.2)
   static-shell-templates
 
 BUNDLED WITH
-   1.10.4
+   1.15.4
