@@ -2,9 +2,9 @@
 set -e
 
 function you_need {
-  which $1 || { 
+  which $1 || {
     echo "You need $1"
-    exit 1 
+    exit 1
   }
 }
 you_need "wget"
@@ -28,7 +28,7 @@ build() {
   unzip -o $VERSION.zip -d $DEST
   mkdir --parents $TMP/usr/local/bin
   chmod a+x $DEST/chromedriver
-  ln -sf /opt/chromedriver/chromedriver $LINK 
+  ln -sf /opt/chromedriver/chromedriver $LINK
 
   rm -f $DEB
   fpm -s dir -t deb -C $TMP -n chromedriver -v $VERSION -a amd64 \
@@ -48,4 +48,5 @@ build() {
 # build "2.12"
 # build "2.13"
 # build "2.14"
-build "2.25"
+# build "2.25"
+build "2.35"

@@ -6,9 +6,9 @@ function bintray-upload() {
   curl -v --progress-bar -T $DEB -u$BINTRAY_USER:$BINTRAY_TOKEN $URL \
     -H 'X-Bintray-Publish: 1' \
     -H 'X-Bintray-Override: 1' \
-		-H 'X-Bintray-Debian-Distribution: stable' \
-		-H 'X-Bintray-Debian-Component: contrib' \
-		-H 'X-Bintray-Debian-Architecture: amd64'
+    -H 'X-Bintray-Debian-Distribution: stable' \
+    -H 'X-Bintray-Debian-Component: contrib' \
+    -H 'X-Bintray-Debian-Architecture: amd64'
   echo
 }
 
